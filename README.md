@@ -14,4 +14,6 @@ Utilizing the native DOM API built into all browsers, this project reveals how l
 
 ## Usage
 
-To use, load the `jquery_lite.js` file in the `<head>` of your HTML.
+To use, load the `jquery_lite.js` file in the `<head>` of your HTML:
+
+```<script type="text/javascript" src="path/to/jquery_lite.js"></script>```
