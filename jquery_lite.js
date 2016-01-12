@@ -1,6 +1,6 @@
 (function() {
 
-  // Queue for all $l functions called before the document is fully loaded:
+  // Queue for all $ functions called before the document is fully loaded:
 
   var fnQueue = [];
   var runQueue = function() {
@@ -21,7 +21,7 @@
 
   // jQuery-lite constructor:
 
-  window.$l = function (input) {
+  window.$ = function (input) {
     if (typeof input === "function") {
       fnQueue.push(input);
 
@@ -62,7 +62,7 @@
 
   // Extend function merges objects:
 
-  window.$l.extend = function () {
+  window.$.extend = function () {
     var objects = Array.prototype.slice.call(arguments);
     var extended = objects.shift();
 
@@ -78,21 +78,15 @@
 
   // Basic jQuery-lite AJAX function:
 
-  window.$l.ajax = function (object) {
+  window.$.ajax = function (object) {
     var defaults = {
-      success: function () {
-        console.log("Request successful");
-      },
-      error: function () {
-        console.error("Request erred");
-      },
       url: "",
       method:'GET',
       data: {},
       contentType: 'application/x-www-form-urlencoded; charset=UTF-8'
     };
 
-    var options = $l.extend(defaults, object);
+    var options = $.extend(defaults, object);
     var xmlhttp = new XMLHttpRequest();
 
     xmlhttp.onreadystatechange = function () {

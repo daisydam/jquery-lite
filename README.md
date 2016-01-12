@@ -6,11 +6,11 @@ Utilizing the native DOM API built into all browsers, this project reveals how l
 
 ## Functionality
 
-- jQuery lite constructor function in the window (`$l`)
-- `$l.extend` to extend multiple objects
-- `$l.ajax` to make basic AJAX requests
+- jQuery lite constructor function in the window (`$`)
+- `$.extend` to extend multiple objects
+- `$.ajax` to make basic AJAX requests
 - Common manipulations of the DOM
-- Event handling (`$.on` and `$.off`), although without event delegation
+- Event handling (`$.on` and `$.off`) without event delegation
 
 ## Usage
 
